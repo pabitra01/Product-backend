@@ -8,7 +8,7 @@ const connectToDatabase=require('./src/database/connect')
 const port=process.env.PORT||5000;
 app.use(express.json());
 app.use(cors({
-    origin:["http://localhost:3000","https://product-frontend-i14n-j9vv2wx34-pabi.vercel.app/"],
+    origin:["https://product-frontend-i14n-j9vv2wx34-pabi.vercel.app","http://localhost:3000"],
     credentials:true
 }));
 app.use(cookieParser())
